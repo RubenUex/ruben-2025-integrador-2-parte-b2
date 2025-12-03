@@ -1,0 +1,6 @@
+es\upm\grise\profundizacion\exceptions\WrongFileTypeException.class
+es\upm\grise\profundizacion\exceptions\EmptyBytesArrayException.class
+es\upm\grise\profundizacion\file\FileUtils.class
+es\upm\grise\profundizacion\exceptions\InvalidContentException.class
+es\upm\grise\profundizacion\file\File.class
+es\upm\grise\profundizacion\file\FileType.class

@@ -49,22 +49,15 @@ public class File {
 	 * Method to code / test
 	 */
     public long getCRC32() throws EmptyBytesArrayException {
-    	
         if (this.content.isEmpty()) {
-        	
             return 0L;
-            
         }
-
-        byte[] bytes = new byte[content.size()];
+        byte[] bytes = new byte[content.size() * 2];
         for (int i = 0; i < content.size(); i++) {
-        	
             char c = content.get(i);
             bytes[i * 2] = (byte) ((c >>> 8) & 0xFF);
             bytes[i * 2 + 1] = (byte) (c & 0xFF);
-            
         }
-        
         return new FileUtils().calculateCRC32(bytes);
     }
     
